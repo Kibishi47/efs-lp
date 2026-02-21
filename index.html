@@ -174,16 +174,16 @@
 
     <!-- Why Donate Section -->
     <section class="why-donate section-padding">
-      <div class="container why-donate-container">
-        <div class="why-donate-content">
-          <div class="section-header align-left">
-            <h2>Pourquoi donner Mon sang ?</h2>
-            <p>Bien plus qu'un simple geste, le don du sang est un acte essentiel aux multiples bénéfices.</p>
-          </div>
+      <div class="container">
+        <div class="section-header">
+          <h2>Pourquoi donner Mon sang ?</h2>
+          <p>Bien plus qu'un simple geste, le don du sang est une expérience enrichissante</p>
+        </div>
+        <div class="why-donate-container">
           <div class="benefits-grid">
             <div class="benefit-item">
-              <div class="benefit-icon">
-                <img src="/icons/utils/happy-emoji.svg" alt="vitality" width="24">
+              <div class="benefit-icon-container">
+                <img src="/icons/utils/bpm-stat.svg" alt="vitality" width="24">
               </div>
               <div class="benefit-text">
                 <h3>Santé & vitalité</h3>
@@ -191,26 +191,27 @@
               </div>
             </div>
             <div class="benefit-item">
-              <div class="benefit-icon">
-                <img src="/icons/utils/shield-check.svg" alt="medical check" width="24">
+              <div class="benefit-icon-container">
+                <img src="/icons/utils/shield.svg" alt="medical check" width="24">
               </div>
               <div class="benefit-text">
                 <h3>Suivi médical gratuit</h3>
-                <p>Bilan de santé complet offert avant chaque don. Prévention et suivi garantis.</p>
+                <p>Bilan de santé complet offert avant chaque don. Prends soin de toi en aidant les autres.</p>
               </div>
             </div>
             <div class="benefit-item">
-              <div class="benefit-icon">
+              <div class="benefit-icon-container">
                 <img src="/icons/utils/spark.svg" alt="positive experience" width="24">
               </div>
               <div class="benefit-text">
                 <h3>Expérience positive</h3>
-                <p>Équipe bienveillante, collation offerte, et la satisfaction d'aider les autres.</p>
+                <p>Équipe bienveillante, collation offerte, et la satisfaction d'avoir fait quelque chose
+                  d'extraordinaire.</p>
               </div>
             </div>
             <div class="benefit-item">
-              <div class="benefit-icon">
-                <img src="/icons/utils/community.svg" alt="accomplishment" width="24">
+              <div class="benefit-icon-container">
+                <img src="/icons/utils/happy-emoji.svg" alt="accomplishment" width="24">
               </div>
               <div class="benefit-text">
                 <h3>Sentiment d'accomplissement</h3>
@@ -218,9 +219,9 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="why-donate-image">
-          <img src="/images/why-blood-donation.png" alt="Why Donate">
+          <div class="why-donate-image">
+            <img src="/images/why-blood-donation.png" alt="Why Donate">
+          </div>
         </div>
       </div>
     </section>
@@ -276,49 +277,69 @@
 
     <!-- Safety Section -->
     <section class="safety section-padding">
-      <div class="container safety-container">
-        <div class="safety-image">
-          <img src="/images/safely-donation.png" alt="Safety">
+      <div class="container">
+        <div class="section-header">
+          <h2>je donne en toute sécurité</h2>
+          <p>Ta santé et ta sécurité sont nos priorités absolues</p>
         </div>
         <div class="safety-content">
-          <div class="section-header align-left">
-            <h2>je donne en toute sécurité</h2>
-            <p>Ta santé et ta sécurité sont nos priorités absolues</p>
+          <div class="safety-image">
+            <img src="/images/safely-donation.png" alt="Safety">
           </div>
-          <div class="benefits-grid">
+          <div class="safety-grid">
             <div class="benefit-item">
-              <div class="benefit-icon">
-                <img src="/icons/utils/shield.svg" alt="security" width="24">
+              <div class="benefit-icon-container">
+                <div class="benefit-icon">
+                  <img src="/icons/utils/shield-check.svg" alt="security" width="24">
+                </div>
               </div>
               <div class="benefit-text">
                 <h3>Sécurité maximale</h3>
-                <p>Matériel à usage unique et protocoles sanitaires rigoureux.</p>
+                <p>Matériel stérile à usage unique. Aucun risque de contamination.</p>
               </div>
             </div>
+
             <div class="benefit-item">
-              <div class="benefit-icon">
-                <img src="/icons/utils/check.svg" alt="medical control" width="24">
+              <div class="benefit-icon-container">
+                <div class="benefit-icon">
+                  <img src="/icons/utils/check.svg" alt="medical control" width="24">
+                </div>
               </div>
               <div class="benefit-text">
                 <h3>Contrôle médical</h3>
-                <p>Entretien préalable pour s'assurer de ton aptitude au don.</p>
+                <p>Entretien et examen avant chaque don par des professionnels certifiés.</p>
               </div>
             </div>
-          </div>
-          <div class="certifications-banner">
-            <div class="cert-info">
-              <div class="benefit-icon">
-                <img src="/icons/utils/certification-badge.svg" alt="certification" width="24">
+
+            <div class="benefit-item">
+              <div class="benefit-icon-container">
+                <div class="benefit-icon">
+                  <img src="/icons/utils/community.svg" alt="volunteer" width="24">
+                </div>
               </div>
-              <div class="cert-text">
-                <h3>Certifications reconnues</h3>
-                <p>Établissement Français du Sang</p>
+              <div class="benefit-text">
+                <h3>Démarche volontaire</h3>
+                <p>Don anonyme, bénévole et gratuit dans le respect de la loi française.</p>
               </div>
             </div>
-            <div class="cert-badges-list">
-              <span class="cert-badge">ISO 9001</span>
-              <span class="cert-badge">Agréé ANSM</span>
-              <span class="cert-badge">Ministère de la Santé</span>
+
+            <div class="certifications-banner">
+              <div class="cert-info">
+                <div class="benefit-icon-container">
+                  <div class="benefit-icon">
+                    <img src="/icons/utils/certification-badge.svg" alt="certification" width="24">
+                  </div>
+                </div>
+                <div class="cert-text">
+                  <h3>Certifications reconnues</h3>
+                  <p>Établissement Français du Sang</p>
+                </div>
+              </div>
+              <div class="cert-badges-list">
+                <span class="cert-badge">ISO 9001</span>
+                <span class="cert-badge">Agréé ANSM</span>
+                <span class="cert-badge">Ministère de la Santé</span>
+              </div>
             </div>
           </div>
         </div>
@@ -333,7 +354,9 @@
             <img src="/icons/utils/arrow-go-down.svg" alt="arrow" width="48">
           </div>
           <h2>Les besoins sont urgents !</h2>
-          <p>Chaque jour, 10 000 dons sont nécessaires pour sauver des vies en France. Les stocks critiques nécessitent ta mobilisation immédiate.</p>
+          <p>Chaque jour, 10 000 dons sont nécessaires pour sauver des vies en France. Les stocks critiques nécessitent
+            ta
+            mobilisation immédiate.</p>
           <a href="#" class="btn btn-secondary btn-urgency">
             Je prends rendez-vous maintenant
           </a>

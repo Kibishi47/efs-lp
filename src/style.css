@@ -364,56 +364,59 @@ h3 {
   background: linear-gradient(180deg, #FFFFFF 0%, #e1f7fc 100%);
 }
 
-.why-donate-container {
-  display: flex;
-  align-items: center;
-  gap: 48px;
+.why-donate .section-header {
+  margin-bottom: 48px;
 }
 
-.why-donate-content {
-  flex: 1;
+.why-donate-container {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  align-items: stretch;
 }
 
 .benefits-grid {
+  flex: 0 0 818px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 }
 
-.benefit-item {
+.benefits-grid .benefit-item {
+  background: white;
+  padding: 24px;
+  border-radius: 14px;
   display: flex;
   flex-direction: column;
   gap: 16px;
+  align-items: flex-start;
 }
 
-.benefit-icon {
-  width: 48px;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--bg-light-blue);
-  border-radius: 10px;
-}
-
-.benefit-text h3 {
+.benefits-grid .benefit-text h3 {
   font-size: 20px;
+  line-height: 28px;
   margin-bottom: 8px;
-  text-transform: none;
+  color: #101828;
 }
 
-.benefit-text p {
+.benefits-grid .benefit-text p {
+  color: #4a5565;
+  line-height: 26px;
   font-size: 16px;
-  color: var(--text-neutral);
+  margin: 0;
 }
 
 .why-donate-image {
-  flex: 0 0 400px;
+  flex: 1 1 0;
+  height: auto;
+  min-height: 476px;
 }
 
 .why-donate-image img {
   width: 100%;
-  border-radius: var(--border-radius-lg);
+  height: 100%;
+  object-fit: cover;
+  border-radius: 24px;
 }
 
 /* How it Works Section */
@@ -478,35 +481,76 @@ h3 {
   background: #f0fbfd;
 }
 
-.safety-container {
+.safety-content {
   display: flex;
-  align-items: center;
-  gap: 48px;
+  gap: 24px;
+  width: 100%;
+  align-items: stretch;
 }
 
 .safety-image {
-  flex: 0 0 373px;
+  flex: 1 1 0;
+  height: auto;
+  min-height: 352px;
 }
 
 .safety-image img {
   width: 100%;
-  border-radius: var(--border-radius-lg);
+  height: 100%;
+  object-fit: cover;
+  border-radius: 24px;
 }
 
-.safety-content {
-  flex: 1;
+.safety-grid {
+  flex: 0 0 843px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.safety-grid .benefit-item {
+  background: white;
+  padding: 24px;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.benefit-icon-container {
+  background: #e1f7fc;
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.safety-grid .benefit-text h3 {
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 8px;
+  color: #101828;
+}
+
+.safety-grid .benefit-text p {
+  color: #4a5565;
+  line-height: 26px;
+  font-size: 16px;
+  margin: 0;
 }
 
 .certifications-banner {
-  background-color: var(--primary-blue);
-  color: white;
+  grid-column: 1 / span 3;
+  background: #009de0;
+  border-radius: 14px;
+  padding: 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 24px;
-  border-radius: 14px;
   width: 100%;
-  margin-top: 48px;
 }
 
 .cert-info {
@@ -516,16 +560,20 @@ h3 {
 }
 
 .cert-text h3 {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-style: normal;
   font-size: 20px;
-  margin-bottom: 0px;
   color: white;
-  text-transform: none;
+  line-height: 28px;
+  margin-bottom: 4px;
 }
 
 .cert-text p {
-  font-size: 16px;
   color: white;
-  margin-bottom: 0px;
+  font-size: 16px;
+  line-height: 26px;
+  margin: 0;
 }
 
 .cert-badges-list {
@@ -535,12 +583,12 @@ h3 {
 }
 
 .cert-badge {
-  background-color: #f3f4f6;
-  color: var(--text-neutral);
+  background: #f3f4f6;
+  color: #4a5565;
   padding: 8px 16px;
-  border-radius: 100px;
+  border-radius: 16777200px;
   font-size: 14px;
-  font-family: var(--font-body);
+  line-height: 20px;
 }
 
 /* Urgency Section */
