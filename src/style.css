@@ -159,7 +159,6 @@ h3 {
   color: var(--primary-blue);
   font-weight: 900;
   font-size: 14px;
-  text-transform: uppercase;
   transition: opacity 0.3s;
 }
 
