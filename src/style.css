@@ -361,6 +361,10 @@ h3 {
 }
 
 /* Why Donate Section */
+.why-donate {
+  background: linear-gradient(180deg, #FFFFFF 0%, #e1f7fc 100%);
+}
+
 .why-donate-container {
   display: flex;
   align-items: center;
@@ -389,8 +393,8 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(231, 0, 11, 0.1);
-  border-radius: 50%;
+  background: var(--bg-light-blue);
+  border-radius: 10px;
 }
 
 .benefit-text h3 {
@@ -471,6 +475,10 @@ h3 {
 }
 
 /* Safety Section */
+.safety {
+  background: #f0fbfd;
+}
+
 .safety-container {
   display: flex;
   align-items: center;
@@ -490,24 +498,55 @@ h3 {
   flex: 1;
 }
 
-.cert-badges {
+.certifications-banner {
+  background-color: var(--primary-blue);
+  color: white;
   display: flex;
-  gap: 12px;
-  margin-top: 12px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+  border-radius: 14px;
+  width: 100%;
+  margin-top: 48px;
 }
 
-.cert-badges span {
+.cert-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.cert-text h3 {
+  font-size: 20px;
+  margin-bottom: 0px;
+  color: white;
+  text-transform: none;
+}
+
+.cert-text p {
+  font-size: 16px;
+  color: white;
+  margin-bottom: 0px;
+}
+
+.cert-badges-list {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.cert-badge {
+  background-color: #f3f4f6;
+  color: var(--text-neutral);
   padding: 8px 16px;
-  background: var(--bg-light-red);
-  border-radius: 4px;
+  border-radius: 100px;
   font-size: 14px;
-  font-weight: 700;
-  color: var(--text-dark);
+  font-family: var(--font-body);
 }
 
 /* Urgency Section */
 .urgency-card {
-  background: #101828;
+  background: linear-gradient(90deg, #e7000b 0%, #c10007 100%);
   color: white;
   padding: 56px;
   border-radius: 24px;
@@ -633,5 +672,5 @@ h3 {
   top: 24px;
   right: 24px;
   width: 32px;
-  opacity: 0.1;
+  opacity: 1;
 }
