@@ -148,6 +148,11 @@ h3 {
   gap: 32px;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+}
+
 .nav-links {
   display: flex;
   list-style: none;
