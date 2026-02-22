@@ -27,6 +27,13 @@
   box-sizing: border-box;
 }
 
+/* Accessibility Focus */
+:focus-visible {
+  outline: 2px solid var(--primary-blue);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
 body {
   font-family: var(--font-body);
   color: var(--text-dark);
