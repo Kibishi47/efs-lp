@@ -259,9 +259,14 @@ h3 {
 }
 
 .hero-svg-bg {
+  width: 515.526px;
+  height: 515.526px;
   position: absolute;
-  top: 468px;
-  right: -100px;
+  right: -78.018px;
+  bottom: -183.526px;
+  background: var(--primary-red);
+  filter: blur(300px);
+  border-radius: 50%;
   z-index: 1;
 }
 
